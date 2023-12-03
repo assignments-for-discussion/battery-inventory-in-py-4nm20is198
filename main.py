@@ -2,7 +2,7 @@ def count_batteries_by_health(present_capacities):
   SOH = []
   h = f = e = 0
   for i in present_capacities:
-    s = 100 * (int(i)/120)
+    s = int(100 * (int(i)/120))
     SOH.append(s)
   for j in SOH:
     if j>80:
