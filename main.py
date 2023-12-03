@@ -1,4 +1,3 @@
-
 def count_batteries_by_health(present_capacities):
   SOH = []
   for i in present_capacities:
@@ -12,9 +11,9 @@ def count_batteries_by_health(present_capacities):
     else:
       exchange = exchange + 1
   return {
-    "healthy": 0,
-    "exchange": 0,
-    "failed": 0
+    "healthy": healthy,
+    "exchange": exchange,
+    "failed": failed
   }
 
 
