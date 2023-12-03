@@ -9,7 +9,7 @@ def count_batteries_by_health(present_capacities):
       h = h + 1           #healthy count
     if j<=80 and j>=62:
       e = e + 1            #exchange count
-    else:
+    if j<62:
       f = f + 1                #failed count
   return {
     "healthy": h,
